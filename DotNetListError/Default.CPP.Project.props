@@ -1,0 +1,24 @@
+<Project>
+
+	<PropertyGroup Label="Globals">
+		<WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Label="Configuration">
+		<OutDir>$(DefaultOutputPath)</OutDir>
+		<PlatformToolset>v143</PlatformToolset>
+		<VCToolsVersion>14.34.31933</VCToolsVersion>
+		<VCToolsRedistVersion>14.34.31931</VCToolsRedistVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Platform)'=='x64'"  Label="Configuration">
+		<OutDir>$(DefaultOutputPath)runtimes\win-x64\native\</OutDir>
+	</PropertyGroup>
+
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<MultiProcessorCompilation>true</MultiProcessorCompilation>
+		</ClCompile>
+	</ItemDefinitionGroup>
+
+</Project>
